@@ -1,0 +1,6 @@
+[submodule "infoRetrieval"]
+	path = infoRetrieval
+	url = https://github.com/yszheda/SimpleTextSearchEngine.git
+[submodule "invertedIndex"]
+	path = invertedIndex
+	url = https://github.com/yszheda/SimpleTextSearchEngine.git
