@@ -58,11 +58,14 @@ public class InvertedIndexKey implements WritableComparable<InvertedIndexKey> {
 		}
 
 		public boolean equals(Object o) {
+				if (!(o instanceof InvertedIndexKey)) {
+						return false;
+				}
 				InvertedIndexKey other = (InvertedIndexKey)o;
 				return this.word.equals(other.word) && this.file_name.equals(other.file_name);
 		}
 
-		/* may not be used */
+		/* always override hashCode() once equals() is overrided */
 		public int hashCode() {
 				return word.hashCode() ^ file_name.hashCode();
 		}
